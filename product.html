@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="bg-green-100  flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="p-4 text-2xl">GREENDEN</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+
+        <ul class="flex gap-5 hidden md:flex text-gray-500 p-5">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+
+    </nav>
+     <!-- side navbar -->
+     <section id="sidenav" class="bg-green-100 fixed top-0 z-20 transition-all durations-1000 " style="width: 50%;height: 100vh;right: -50%;">
+        <div id="closenav" class="text-right p-5 text-2xl">
+            <p class="inline cursor-pointer">X</p>
+        </div>
+          <ul class="flex gap-10 flex-col items-center text-gray-500 p-5">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+     </section>
+    <!-- header -->
+    <header class="text-center">
+        <h2 class="text-4xl font-bold  mt-10">Our Products</h2>
+        <input id="search" type="text" placeholder="Search for a Products..." class="border border-black p-2 mt-5"
+            style="width: 80%;">
+    </header>
+    <!-- products -->
+    <section class="text-center">
+        <div id="product-container" class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-5 p-2">
+            <div>
+                <img src="./images/plant1.png" alt="plant1" class="inline  hover:shadow-xl transform hover:-translate-y-2">
+                <h1 class="font-medium">Indoor plant</h1>
+                <p>$40</p>
+            </div>
+            <div>
+                <img src="images/plant2.png" alt="plant2" class="inline  hover:shadow-xl transform hover:-translate-y-2 ">
+                <h1 class="font-medium">Pink Plant</h1>
+                <p>$50</p>
+            </div>
+
+            <div>
+                <img src="./images/plant3.png" alt="plant3" class="inline  hover:shadow-xl transform hover:-translate-y-2 ">
+                <h1 class="font-medium">Green Plant</h1>
+                <p>$50</p>
+            </div>
+            <div>
+                <img src="./images/plant4.png" alt="plant4" class="inline  hover:shadow-xl transform hover:-translate-y-2">
+                <h1 class="font-medium">Yellow Plant</h1>
+                <p>$60</p>
+            </div>
+            <div>
+                <img src="./images/plant5.png" alt="plant5" class="inline  hover:shadow-xl transform hover:-translate-y-2">
+                <h1 class="font-medium">Red Plant</h1>
+                <p>&80</p>
+            </div>
+            <div>
+                <img src="./images/plant6.png" alt="plant6" class="inline  hover:shadow-xl transform hover:-translate-y-2">
+                <h1 class="font-medium">Air Plant</h1>
+                <p>$90</p>
+            </div>
+            <div>
+                <img src="./images/plant8.png" alt="plant7" class="inline  hover:shadow-xl transform hover:-translate-y-2">
+                <h1 class="font-medium">Nurturing Plant</h1>
+                <p>$30</p>
+            </div>
+            <div>
+                <img src="./images/plant7.png" alt="plant8" class="inline  hover:shadow-xl transform hover:-translate-y-2">
+                <h1 class="font-medium">Ugaoo Plant</h1>
+                <p>$40</p>
+            </div>
+
+           
+            
+          
+        </div>
+    </section>
+    <!-- footer -->
+     <footer class="mt-10">
+        <div class="bg-green-100 p-10 ">
+            <h1 class="text-4xl pt30 font-bold mt-5">Greenden</h1>
+            <p class="mt-5">The Standard chunk of Lorem ipsum used since the 1500s is resprodused below for those interest</p>
+            <p class="mt-5">@ 2021 Greenday.com</p>
+        </div>
+     </footer>
+</body>
+<script src="product.js"></script>
+
+</html>
